@@ -1,0 +1,181 @@
+/* <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  /* <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> */ 
+:root {
+    --blue-color: #2AB3B1;
+    --green-color: #C0DF33;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #F2F2F2;
+}
+
+/* Upper section of main container */
+.mainContainer {
+    width: 635px;
+    height: 475px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFF;
+    padding-bottom: 40px;
+}
+
+h2 {
+    color: var(--blue-color);
+    font-family: 'Karla', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.upperBox h3 {
+    color: var(--green-color);
+}
+
+.upperBox p {
+    color: #9AA7BE;
+    margin-bottom: 40px;
+}
+
+/* Grid Section */
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 259px;
+    color: white;
+}
+
+.left {
+    background-color: var(--blue-color);
+}
+
+.right {
+    background-color: var(--blue-color);
+    opacity: 0.85;
+}
+
+.left .p--opaque {
+    opacity: 0.5;
+}
+
+span {
+    font-family: 'Karla', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: -0.4000000059604645px;
+    text-align: left;
+    margin-right: 11px;
+}
+
+button {
+    width: 237px;
+    height: 48px;
+    top: 172px;
+    margin-left: 40px;
+    background-color: var(--green-color);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: -0.20000000298023224px;
+    color: white;
+    margin-bottom: 39px;
+}
+
+.right p {
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.17499999701976776px;
+    text-align: left;
+    opacity: 0.75;
+}
+
+/* Utilities */
+
+h3{
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.3px;
+    margin-left: 40px;
+}
+
+p {
+    margin-left: 40px;
+}
+
+.p--larger {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    text-align: left;
+}
+
+.column {
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 800px){
+    
+    .mainContainer {
+        width: 311px;
+        height: 722px;
+    }
+
+    h3 {
+        margin-top: 10px;
+    }
+
+    .upperBox p {
+        font-size: 14px;
+    }
+
+    .gridContainer {
+        grid-template-columns: 1fr;
+        height: 455px;
+}
+
+    h2,button,h3,p {
+    margin-left: 24px;
+}
+
+    button {
+    margin-bottom: 24px;
+    width: 263px;
+}
+
+}
