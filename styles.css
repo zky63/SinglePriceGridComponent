@@ -82,7 +82,7 @@ h4 {
     letter-spacing: -0.4000000059604645px;
     text-align: left;
     margin-left: 40px;
-    margin-bottom: 4px;
+    margin-bottom: -10px;
     margin-top: 5px;
 }
 
@@ -116,7 +116,7 @@ button {
     line-height: 19px;
     letter-spacing: -0.20000000298023224px;
     color: white;
-    margin-bottom: 39px;
+    margin-top: 10px;
 }
 
 .right p {
@@ -177,15 +177,15 @@ p {
     .gridContainer {
         grid-template-columns: 1fr;
         height: 455px;
-}
+    }
 
     h2,button,h3,p {
     margin-left: 24px;
-}
+    }
 
-h4 {
+    h4 {
     margin-left: 24px;
-}
+    }
 
     button {
     margin-bottom: 24px;
